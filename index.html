@@ -1,0 +1,32 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="translation-wrapper">
+            <div class="pony"><img src="assets/applejack.png"></div>
+            <div class="translation-block">
+                <div class="user-interaction">
+                    <form привid="translation-form">
+                        <label for="input-area">Переводчик с русского на украинский</label>
+                        <textarea id="input-area" placeholder="Введи фразу для перевода"></textarea>
+                    </form>
+                </div>
+
+                <div class="translation"> 
+                    <div class="translation-title"><h1>Ваш перевод</h1></div>
+                    <div class="translation-result">
+                        <span id="translation-result-text"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/translation.js"></script>
+    </body>
+</html>

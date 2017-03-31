@@ -1,0 +1,148 @@
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px; 
+    background: azure url(/assets/background.jpg) center no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    position: relative;
+}
+
+.translation-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pony {
+    background: rgba(255,255,255, 0.2) no-repeat;
+    position: fixed;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 10px;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+    box-shadow: 2px 2px;
+    
+}
+
+.pony img {
+    width: 150px;
+    height: 150px;
+}
+
+.pony:hover,
+.pony:hover img {
+    transform: rotate(-2deg)
+}
+
+.translation-block {
+    background-color: #DBE68A;
+    vertical-align: middle;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    border-bottom: 1px solid burlywood;
+    box-shadow: 3px 3px 3px;
+    
+}
+
+.user-interaction {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.translation-title h1, 
+.user-interaction label {
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.user-interaction label {
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.user-interaction textarea, 
+.translation-result {
+    width: 95%;
+    padding: 10px;
+    margin: 0 auto;
+    max-height: 200px;
+    border: 3px solid red;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px;
+}
+
+.user-interaction textarea {
+    font-family: inherit;
+    display: block;
+    height: 130px;
+    resize:none;
+    font-size: 18px;
+}
+
+.user-interaction #translate-button {
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: pink;
+}
+
+.user-interaction #translate-button:hover {
+    background-color: hotpink;
+}
+
+.user-interaction #translate-button:active {
+    background-color: deeppink;
+}
+
+.translation-result {
+    overflow: auto;
+    overflow-y: auto;
+    min-height: 18px;
+    border: 3px solid red;
+    padding: 10px;
+    background-color: beige;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px;
+}
+
+.text {
+    width: 300px;
+    height: 300px;
+}
+
+#translation-result-text {
+    text-align: justify;
+    word-break: break-all;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
